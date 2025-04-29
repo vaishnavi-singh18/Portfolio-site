@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Singh | Resources</title>
+    <!-- Same head as index.html -->
+</head>
+<body>
+    <!-- Navigation same as index.html -->
+
+    <section class="resources-section section-entry">
+        <div class="container">
+            <h1 class="section-title">Resources & Blog</h1>
+            
+            <div class="resources-tabs">
+                <button class="tab-btn active" data-tab="articles">Articles</button>
+                <button class="tab-btn" data-tab="books">Book Recommendations</button>
+                <button class="tab-btn" data-tab="tools">HR Tools</button>
+            </div>
+            
+            <div class="tab-content active" id="articles">
+                <div class="article-card">
+                    <h3>The Future of Talent Acquisition</h3>
+                    <p class="meta">HR Today | June 2023</p>
+                    <p>Exploring how AI is changing recruitment processes and what HR professionals need to know...</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+                
+                <div class="article-card">
+                    <h3>Employee Engagement in Remote Work</h3>
+                    <p class="meta">Harvard Business Review | April 2023</p>
+                    <p>Strategies for maintaining team connection and productivity in hybrid work environments...</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+                
+                <div class="article-card">
+                    <h3>My Experience with Coursera's HR Courses</h3>
+                    <p class="meta">Personal Blog | March 2023</p>
+                    <p>A review of the certification programs I completed and how they helped my HR knowledge...</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="books">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book1.jpg" alt="HR Book">
+                    </div>
+                    <div class="book-info">
+                        <h3>"The HR Scorecard"</h3>
+                        <p class="author">by Brian Becker, Mark Huselid</p>
+                        <p>A must-read for understanding how to measure HR's impact on business performance.</p>
+                        <a href="#" class="find-book">Find on Amazon →</a>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book2.jpg" alt="HR Book">
+                    </div>
+                    <div class="book-info">
+                        <h3>"Work Rules!"</h3>
+                        <p class="author">by Laszlo Bock</p>
+                        <p>Insights from Google's former SVP of People Operations on building great company culture.</p>
+                        <a href="#" class="find-book">Find on Amazon →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tools">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Tableau for HR Analytics</h3>
+                        <p>Powerful data visualization tool for workforce metrics and trends.</p>
+                        <a href="#" class="tool-link">Visit Website →</a>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>LinkedIn Talent Solutions</h3>
+                        <p>Comprehensive recruitment platform with powerful candidate search.</p>
+                        <a href="#" class="tool-link">Visit Website →</a>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Coursera HR Courses</h3>
+                        <p>High-quality online courses from top universities on HR topics.</p>
+                        <a href="#" class="tool-link">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer same as index.html -->
+    <!-- Scripts same as index.html plus: -->
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Hide all tab contents
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected tab content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
