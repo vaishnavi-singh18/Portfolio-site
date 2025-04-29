@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Singh | Projects</title>
+    <!-- Same head as index.html -->
+</head>
+<body>
+    <!-- Navigation same as index.html -->
+
+    <section class="projects-section section-entry">
+        <div class="container">
+            <h1 class="section-title">My Projects</h1>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hr">HR Projects</button>
+                <button class="filter-btn" data-filter="design">Design Projects</button>
+                <button class="filter-btn" data-filter="video">Video Projects</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="hr">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="HR Analysis Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Analytics Dashboard</h3>
+                        <p>Created an Excel dashboard analyzing employee retention factors</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="SAE Club Posters">
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE Club Event Posters</h3>
+                        <p>Designed promotional materials for 5+ university events</p>
+                        <a href="#" class="project-link">View Gallery →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Recruitment Video">
+                    </div>
+                    <div class="project-info">
+                        <h3>Campus Recruitment Video</h3>
+                        <p>Produced a video highlighting university placement opportunities</p>
+                        <a href="#" class="project-link">Watch Video →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="hr">
+                    <div class="project-image">
+                        <img src="assets/images/project4.jpg" alt="Training Program">
+                    </div>
+                    <div class="project-info">
+                        <h3>Employee Training Program</h3>
+                        <p>Developed a mock training curriculum for new hires</p>
+                        <a href="#" class="project-link">View Outline →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer and scripts same as index.html -->
+    <script>
+        // Project filtering functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.project-card');
+                
+                projects.forEach(project => {
+                    if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
