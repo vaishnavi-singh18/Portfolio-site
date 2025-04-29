@@ -1,0 +1,94 @@
+/* Title Animation */
+.title-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.title-word-1 {
+    animation: fadeInUp 0.6s forwards 0.1s;
+}
+
+.title-word-2 {
+    animation: fadeInUp 0.6s forwards 0.3s;
+}
+
+.title-word-3 {
+    animation: fadeInUp 0.6s forwards 0.5s;
+    color: var(--primary-color);
+}
+
+.title-word-4 {
+    animation: fadeInUp 0.6s forwards 0.7s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Animation */
+.btn-primary, .btn-secondary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after, .btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s;
+}
+
+.btn-primary:hover::after, .btn-secondary:hover::after {
+    left: 100%;
+}
+
+/* Card Hover Animation */
+.link-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.1), transparent);
+    transition: left 0.7s;
+}
+
+.link-card:hover::before {
+    left: 100%;
+}
+
+/* Image Animation */
+.profile-img {
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Entry Animation */
+.section-entry {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.section-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
