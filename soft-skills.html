@@ -1,66 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft Skills | Vaishnavi Singh</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Skills | Vaishnavi Singh</title>
+  <meta name="description" content="Vaishnavi Singh's soft skills including communication, leadership, and teamwork" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Additional styles for the animated skills */
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .skill-bar {
+      height: 8px;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .skill-progress {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #4A6FA5, #6D8FC7);
+      position: relative;
+      width: 0;
+      transition: width 1.5s ease-out;
+    }
+    
+    .skill-percent {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #4A6FA5;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.5s ease 1s;
+    }
+    
+    .skill-category.animated .skill-progress {
+      width: var(--target-width);
+    }
+    
+    .skill-category.animated .skill-percent {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <!-- Same header as index.html -->
-    </header>
+  <header class="header">
+    <div class="container">
+      <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+        <button class="mobile-nav-btn" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
+            <li class="nav-item"><a href="soft-skills.html" class="nav-link active">Soft Skills</a></li>
+            <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <section class="skills-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Soft Skills</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Communication</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                        <span>90%</span>
-                    </div>
-                    <p>Effective verbal and written communication skills developed through academic presentations and team projects.</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Leadership</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%;"></div>
-                        <span>85%</span>
-                    </div>
-                    <p>Demonstrated leadership in university clubs and team projects, guiding groups toward common goals.</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Teamwork</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%;"></div>
-                        <span>95%</span>
-                    </div>
-                    <p>Collaborative approach with experience in diverse team environments in academic and extracurricular settings.</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Problem Solving</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%;"></div>
-                        <span>88%</span>
-                    </div>
-                    <p>Analytical thinking and creative solutions developed through case studies and real-world projects.</p>
-                </div>
-            </div>
+  <main>
+    <section class="skills-section" id="soft-skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Soft Skills</h2>
+          <p class="section-subtitle">My interpersonal strengths and abilities</p>
         </div>
+        <div class="skills-container">
+          <div class="skill-category" data-percent="90%">
+            <div class="skill-header">
+              <h3>Communication</h3>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <p>Effective verbal and written communication skills developed through academic presentations and team projects.</p>
+          </div>
+
+          <div class="skill-category" data-percent="85%">
+            <div class="skill-header">
+              <h3>Adaptability</h3>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <p>Quick to adjust to changing situations, effectively navigating challenges in university clubs and team projects.</p>
+          </div>
+
+          <div class="skill-category" data-percent="95%">
+            <div class="skill-header">
+              <h3>Teamwork</h3>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <p>Collaborative approach with experience in diverse team environments in academic and extracurricular settings.</p>
+          </div>
+
+          <div class="skill-category" data-percent="88%">
+            <div class="skill-header">
+              <h3>Problem Solving</h3>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+            <p>Analytical thinking and creative solutions developed through case studies and real-world projects.</p>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <footer class="footer">
-        <!-- Same footer as index.html -->
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col footer-about">
+          <h3>Vaishnavi Singh</h3>
+          <p>HR Professional & Creative Enthusiast</p>
+        </div>
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+            <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+            <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
+  <a href="#soft-skills" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-nav-btn').addEventListener('click', function () {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+
+      // Change icon ☰ → ✕
+      const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+      this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+    });
+
+    // Animate skills when scrolled into view
+    document.addEventListener('DOMContentLoaded', function() {
+      const skillCategories = document.querySelectorAll('.skill-category');
+      
+      function animateSkills() {
+        skillCategories.forEach(category => {
+          const rect = category.getBoundingClientRect();
+          const isVisible = (rect.top <= window.innerHeight * 0.8) && (rect.bottom >= 0);
+          
+          if (isVisible && !category.classList.contains('animated')) {
+            category.classList.add('animated');
+            const percent = category.getAttribute('data-percent');
+            const progressBar = category.querySelector('.skill-progress');
+            const percentDisplay = category.querySelector('.skill-percent');
+            
+            // Set the target width for the progress bar
+            progressBar.style.setProperty('--target-width', percent);
+            
+            // Animate the percentage counter
+            let current = 0;
+            const target = parseInt(percent);
+            const duration = 1500; // 1.5 seconds
+            const increment = target / (duration / 16);
+            
+            const animateCounter = () => {
+              current += increment;
+              if (current < target) {
+                percentDisplay.textContent = Math.round(current) + '%';
+                requestAnimationFrame(animateCounter);
+              } else {
+                percentDisplay.textContent = percent;
+              }
+            };
+            
+            animateCounter();
+          }
+        });
+      }
+      
+      // Run on load and scroll
+      animateSkills();
+      window.addEventListener('scroll', animateSkills);
+      
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
