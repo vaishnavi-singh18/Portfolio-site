@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Vaishnavi Singh</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Learn more about Vaishnavi Singh, her education, and career aspirations">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="nav-container">
-                <a href="index.html" class="logo">Vaishnavi<span>.</span></a>
-                <button class="mobile-nav-btn">
+                <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+                <button class="mobile-nav-btn" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Main navigation">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="bio.html" class="nav-link active">Bio</a></li>
                         <li class="nav-item"><a href="soft-skills.html" class="nav-link">Soft Skills</a></li>
-                        <li class="nav-item"><a href="tech-skills.html" class="nav-link">Tech Skills</a></li>
+                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
                         <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
                         <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
@@ -32,48 +33,87 @@
         </div>
     </header>
 
-    <section class="about-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="Vaishnavi Singh">
+    <main>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
                 </div>
-                <div class="about-text">
-                    <h3>B.B.A. (HRM) Student at MMMUT, Gorakhpur</h3>
-                    <p>I'm Vaishnavi Singh, a second-year B.B.A. student specializing in Human Resource Management. With a strong interest in HR, talent acquisition, and business processes, I have earned certifications from Reliance Foundation, Coursera, and Infosys Springboard.</p>
-                    <p>Beyond academics, I am a creative enthusiast involved in video editing and poster designing, currently contributing to the SAE Collegiate Club at my university. I am passionate about learning, growing, and bringing fresh ideas into the professional world.</p>
-                    
-                    <div class="education">
-                        <h4>Education</h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2021 - Present</div>
-                                <div class="timeline-content">
-                                    <h5>Bachelor of Business Administration (HRM)</h5>
-                                    <p>Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="WhatsApp Image 2025-04-29 at 03.53.39_1add45b5.jpg" alt="Vaishnavi Singh">
+                    </div>
+                    <div class="about-text">
+                        <h3>B.B.A. (HR) Student at MMMUT, Gorakhpur</h3>
+                        <p>I'm Vaishnavi Singh, a second-year B.B.A. student specializing in Human Resource Management. With a strong interest in HR, talent acquisition, and business processes, I have earned certifications from Reliance Foundation, Coursera, and Forage.</p>
+                        <p>Beyond academics, I am a creative enthusiast involved in video editing and photography, currently contributing to the SAE Collegiate Club at my university. I am passionate about learning, growing, and bringing fresh ideas into the professional world.</p>
+                        
+                        <div class="education">
+                            <h4>Education</h4>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2023 - Present</div>
+                                    <div class="timeline-content">
+                                        <h5>Bachelor of Business Administration (HRM)</h5>
+                                        <p>Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="career-aspirations">
-                        <h4>Career Aspirations</h4>
-                        <p>I aspire to become a strategic HR Business Partner, specializing in Talent Acquisition, Employee Engagement, and Organizational Development.</p>
+                        
+                        <div class="career-aspirations">
+                            <h4>Career Aspirations</h4>
+                            <p>I aspire to become a strategic HR Business Partner, specializing in Talent Acquisition, Employee Engagement, and Organizational Development.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h3>Vaishnavi Singh</h3>
+                    <p>HR Professional & Creative Enthusiast</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+                        <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <a href="#about" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+    <script>
+        document.querySelector('.mobile-nav-btn').addEventListener('click', function() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+          
+          // Change icon ☰ → ✕
+          const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+          this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+        });
+      </script>
 </body>
 </html>
