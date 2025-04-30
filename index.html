@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaishnavi Singh | HR Professional</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Vaishnavi Singh | HR Professional & Creative Enthusiast</title>
+    <meta name="description" content="Portfolio of Vaishnavi Singh, HR Professional and Creative Enthusiast">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="nav-container">
-                <a href="index.html" class="logo">Vaishnavi<span>.</span></a>
-                <button class="mobile-nav-btn">
+                <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+                <button class="mobile-nav-btn" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Main navigation">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
                         <li class="nav-item"><a href="soft-skills.html" class="nav-link">Soft Skills</a></li>
-                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Tech Skills</a></li>
+                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
                         <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
                         <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
@@ -32,22 +33,22 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm <span>Vaishnavi Singh</span></h1>
-                    <h3>HR Professional & Creative Enthusiast</h3>
-                    <p>B.B.A. (HRM) Student | Aspiring HR Professional | Video Editor passionate about talent acquisition and organizational development.</p>
+                    <h2>HR Professional & Creative Enthusiast</h2>
+                    <p class="hero-description">B.B.A. (HR) Student | Aspiring HR Professional | Video Editor passionate about talent acquisition and organizational development.</p>
                     <div class="hero-btns">
-                        <a href="contact.html" class="btn">Get In Touch</a>
+                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
                         <a href="projects.html" class="btn btn-secondary">View My Work</a>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vaishnavi-singh00/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/vs_chaosxedits/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@vaishnavisingh397" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/vaishnavi-singh18" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -57,24 +58,31 @@
         </div>
     </section>
 
-    <section class="highlights">
+    <section class="highlights" id="highlights">
         <div class="container">
             <div class="section-title">
                 <h2>Quick Highlights</h2>
+                <p class="section-subtitle">A snapshot of my professional journey</p>
             </div>
             <div class="highlights-container">
                 <div class="highlight-card">
-                    <i class="fas fa-graduation-cap"></i>
+                    <div class="highlight-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
                     <h3>Education</h3>
-                    <p>B.B.A. (HRM) at MMMUT, Gorakhpur</p>
+                    <p>B.B.A. (HR) at MMMUT, Gorakhpur</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-certificate"></i>
+                    <div class="highlight-icon">
+                        <i class="fas fa-certificate" aria-hidden="true"></i>
+                    </div>
                     <h3>Certifications</h3>
                     <p>From Reliance, Coursera & Infosys</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-briefcase"></i>
+                    <div class="highlight-icon">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    </div>
                     <h3>Experience</h3>
                     <p>SAE Collegiate Club Member</p>
                 </div>
@@ -85,35 +93,45 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
+                <div class="footer-col footer-about">
                     <h3>Vaishnavi Singh</h3>
                     <p>HR Professional & Creative Enthusiast</p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col footer-links">
                     <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <ul class="footer-links-list">
                         <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
                         <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
                         <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
-                        <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> Phone</a></li>
-                        <li><a href="contact.html"><i class="fas fa-map-marker-alt"></i> Location</a></li>
-                    </ul>
-                </div>
+                  <h3>Contact</h3>
+                  <ul class="footer-links">
+                      <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                      <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+                      <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                  </ul>
+              </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2023 Vaishnavi Singh. All rights reserved.</p>
+                <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+    <script>
+      document.querySelector('.mobile-nav-btn').addEventListener('click', function() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        
+        // Change icon ☰ → ✕
+        const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+        this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+      });
+    </script>
 </body>
 </html>
