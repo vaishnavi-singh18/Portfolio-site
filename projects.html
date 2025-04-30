@@ -4,66 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Vaishnavi Singh</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Vaishnavi Singh's research, case study including HR initiatives and creative work">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <!-- Same header as index.html -->
-    </header>
-
-    <section class="projects-section">
+    <header class="header" id="header">
         <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="hr">HR Projects</button>
-                <button class="filter-btn" data-filter="creative">Creative</button>
-                <button class="filter-btn" data-filter="academic">Academic</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="hr">
-                    <div class="project-img">
-                        <img src="images/project1.jpg" alt="HR Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>Employee Engagement Program</h3>
-                        <p>Developed a comprehensive employee engagement strategy for a case study company</p>
-                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="creative">
-                    <div class="project-img">
-                        <img src="images/project2.jpg" alt="Video Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>University Promo Video</h3>
-                        <p>Created promotional video for university club recruitment</p>
-                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="academic">
-                    <div class="project-img">
-                        <img src="images/project3.jpg" alt="Research Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>HR Trends Research</h3>
-                        <p>Research paper on emerging HR trends in post-pandemic workplace</p>
-                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            <div class="nav-container">
+                <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+                <button class="mobile-nav-btn" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="navbar" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
+                        <li class="nav-item"><a href="soft-skills.html" class="nav-link">Soft Skills</a></li>
+                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                        <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                    <p class="section-subtitle">A showcase of my work and initiatives</p>
+                </div>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="video editing">Fest Promo Video</button>
+                    <button class="filter-btn" data-filter="photography">Event Glimpes</button>
+                    <button class="filter-btn" data-filter="case study">Case Study</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="research">
+                        <div class="project-img">
+                            <img src="Sustainable Human Resource Management Research_pages-to-jpg-0001.jpg" alt="Sustainable Human Resource Management Practices for Net-Zero Economy" width="400" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Sustainable Human Resource Management Practices for Net-Zero Economy</h3>
+                            <p>Conducted a study on sustainable human resource management practices supporting the transition to a net-zero economy.</p>
+                            <a href="Sustainable Human Resource Management Research.pdf" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="video editing">
+                        <div class="project-img">
+                            <img src="Screenshot 2025-04-29 141759.png" alt="Fest Promo Video" width="400" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Fest Promo Video</h3>
+                            <p>Created promotional video for university club recruitment</p>
+                            <a href="Abhyudaya.mp4" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="photography">
+                        <div class="project-img">
+                            <img src="DSC00695.JPG" alt="Event Glimpes" width="400" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Event Glimpes</h3>
+                            <p>Explored key challenges in employee retention and strategies to improve workforce stability in modern organizations.</p>
+                            <a href="DSC00695.JPG" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="case study">
+                        <div class="project-img">
+                            <img src="083454d5-fbc7-4682-aff1-174ba4e61998-0.jpg" alt="HR Trends Research" width="400" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Employee Retention Challenges</h3>
+                            <p>Explored key challenges in employee retention and strategies to improve workforce stability in modern organizations.</p>
+                            <a href="Employee Retention Challenges.pptx" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h3>Vaishnavi Singh</h3>
+                    <p>HR Professional & Creative Enthusiast</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+                        <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <a href="#projects" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+<script>
+        document.querySelector('.mobile-nav-btn').addEventListener('click', function() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+          
+          // Change icon ☰ → ✕
+          const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+          this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+        });
+ 
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter').toLowerCase();
+                
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category').toLowerCase();
+                    
+                    if (filterValue === 'all' || cardCategory.includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
