@@ -1453,3 +1453,20 @@ textarea.form-control {
 .tab-content.active {
     display: block;
 }
+
+.header {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  backdrop-filter: blur(10px);               /* Frosted-glass effect */
+  -webkit-backdrop-filter: blur(10px);       /* For Safari support */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Less transparent */
+}
