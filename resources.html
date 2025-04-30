@@ -4,71 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources | Vaishnavi Singh</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Helpful HR, creative, and study resources curated by Vaishnavi Singh">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <!-- Same header as index.html -->
-    </header>
-
-    <section class="resources-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Helpful Resources</h2>
-            </div>
-            <div class="resources-tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="hr-resources">HR Resources</button>
-                    <button class="tab-btn" data-tab="creative-resources">Creative Resources</button>
-                    <button class="tab-btn" data-tab="study-materials">Study Materials</button>
-                </div>
-                
-                <div class="tab-content active" id="hr-resources">
-                    <div class="resource-card">
-                        <h3><i class="fas fa-book"></i> HR Books</h3>
-                        <ul>
-                            <li><a href="#">"The HR Scorecard" by Becker, Huselid & Ulrich</a></li>
-                            <li><a href="#">"HR Disrupted" by Lucy Adams</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-card">
-                        <h3><i class="fas fa-globe"></i> Websites</h3>
-                        <ul>
-                            <li><a href="https://www.shrm.org" target="_blank">SHRM (Society for HR Management)</a></li>
-                            <li><a href="https://www.hrtechnologist.com" target="_blank">HR Technologist</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="creative-resources">
-                    <div class="resource-card">
-                        <h3><i class="fas fa-video"></i> Video Editing</h3>
-                        <ul>
-                            <li><a href="#">Adobe Premiere Pro Tutorials</a></li>
-                            <li><a href="#">Color Grading Techniques</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="tab-content" id="study-materials">
-                    <div class="resource-card">
-                        <h3><i class="fas fa-file-pdf"></i> Study Notes</h3>
-                        <ul>
-                            <li><a href="#">Organizational Behavior Notes</a></li>
-                            <li><a href="#">HR Analytics Case Studies</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="nav-container">
+                <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+                <button class="mobile-nav-btn" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="navbar" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
+                        <li class="nav-item"><a href="soft-skills.html" class="nav-link">Soft Skills</a></li>
+                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="resources.html" class="nav-link active">Resources</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <section class="resources-section" id="resources">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Helpful Resources</h2>
+                    <p class="section-subtitle">Curated collection of valuable materials</p>
+                </div>
+                <div class="resources-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="hr-resources">HR Resources</button>
+                        <button class="tab-btn" data-tab="creative-resources">Creative Resources</button>
+                        <button class="tab-btn" data-tab="study-materials">Study Materials</button>
+                    </div>
+        
+                    <!-- HR Resources -->
+                    <div class="tab-content active" id="hr-resources">
+                        <div class="resource-card">
+                            <h3><i class="fas fa-briefcase"></i> Articles & Research</h3>
+                            <ul>
+                                <li><a href="https://hbr.org/topic/human-resources" target="_blank">Harvard Business Review – HR</a></li>
+                                <li><a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights" target="_blank">McKinsey Talent Insights</a></li>
+                                <li><a href="https://aom.org/research/publishing-with-aom/journals/academy-of-management-journal" target="_blank">Academy of Management Journal</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-book"></i> Recommended Books</h3>
+                            <ul>
+                                <li><a href="https://www.amazon.in/Work-Rules-Insights-Inside-Transform/dp/1478980877" target="_blank">"Work Rules!" by Laszlo Bock</a></li>
+                                <li><a href="https://www.amazon.in/Drive-Surprising-Truth-About-Motivates/dp/1594484805" target="_blank">"Drive" by Daniel Pink</a></li>
+                                <li><a href="https://www.amazon.in/First-Break-All-Rules-Differently/dp/1595621113" target="_blank">"First Break All the Rules" by Marcus Buckingham</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-globe"></i> Websites</h3>
+                            <ul>
+                                <li><a href="https://www.shrm.org" target="_blank">SHRM</a></li>
+                                <li><a href="https://www.peoplematters.in/" target="_blank">People Matters</a></li>
+                                <li><a href="https://www.cipd.co.uk/" target="_blank">CIPD UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Creative Resources -->
+                    <div class="tab-content" id="creative-resources">
+                        <div class="resource-card">
+                            <h3><i class="fas fa-video"></i> Video Editing Tools</h3>
+                            <ul>
+                                <li><a href="https://www.youtube.com/c/PremiereGal" target="_blank">Premiere Gal (YouTube)</a></li>
+                                <li><a href="https://motionarray.com/blog/" target="_blank">Motion Array Blog</a></li>
+                                <li><a href="https://tutsplus.com/tutorials/search/video-editing" target="_blank">Envato Tuts+</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-palette"></i> Design & Inspiration</h3>
+                            <ul>
+                                <li><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+                                <li><a href="https://coolors.co/" target="_blank">Coolors</a></li>
+                                <li><a href="https://www.canva.com/designschool/" target="_blank">Canva Design School</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-image"></i> Free Assets</h3>
+                            <ul>
+                                <li><a href="https://www.pixabay.com" target="_blank">Pixabay</a></li>
+                                <li><a href="https://fontpair.co/" target="_blank">FontPair</a></li>
+                                <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Study Materials -->
+                    <div class="tab-content" id="study-materials">
+                        <div class="resource-card">
+                            <h3><i class="fas fa-book-open"></i> Academic Resources</h3>
+                            <ul>
+                                <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate</a></li>
+                                <li><a href="https://epgp.inflibnet.ac.in/" target="_blank">ePathshala (UGC/NPTEL)</a></li>
+                                <li><a href="https://www.scribd.com/" target="_blank">Scribd</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-graduation-cap"></i> Online Learning</h3>
+                            <ul>
+                                <li><a href="https://www.coursera.org/browse/business/human-resources" target="_blank">Coursera – HR</a></li>
+                                <li><a href="https://www.edx.org/learn/human-resources" target="_blank">edX – HR Management</a></li>
+                                <li><a href="https://nptel.ac.in/courses/110/105/110105146/" target="_blank">NPTEL – HRM</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h3><i class="fas fa-lightbulb"></i> Blogs & Insights</h3>
+                            <ul>
+                                <li><a href="https://hbswk.hbs.edu/" target="_blank">HBS Working Knowledge</a></li>
+                                <li><a href="https://www.simplilearn.com/resources" target="_blank">Simplilearn Resources</a></li>
+                                <li><a href="https://www.linkedin.com/business/talent/blog" target="_blank">LinkedIn Talent Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
-    </footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h3>Vaishnavi Singh</h3>
+                    <p>HR Professional & Creative Enthusiast</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                  <h3>Contact</h3>
+                  <ul class="footer-links">
+                      <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                      <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+                      <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
+            </div>
+        </div>
 
-    <script src="js/main.js"></script>
+    <a href="#resources" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+ <script>
+        document.querySelector('.mobile-nav-btn').addEventListener('click', function() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+          
+          // Change icon ☰ → ✕
+          const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+          this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+        });
+ </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active classes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+    
+                // Add active class to clicked button
+                button.classList.add('active');
+    
+                // Get target tab and show it
+                const targetTab = button.getAttribute('data-tab');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+    });
+    </script>
+
 </body>
 </html>
