@@ -4,67 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Vaishnavi Singh</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Vaishnavi Singh's professional resume and experience">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <!-- Same header as index.html -->
-    </header>
-
-    <section class="resume-section">
         <div class="container">
-            <div class="section-title">
-                <h2>My Resume</h2>
-            </div>
-            <div class="resume-container">
-                <div class="resume-download">
-                    <a href="docs/resume.pdf" class="btn" download><i class="fas fa-download"></i> Download PDF</a>
-                </div>
-                <div class="resume-preview">
-                    <iframe src="docs/resume.pdf" frameborder="0"></iframe>
-                </div>
-                <div class="resume-details">
-                    <div class="resume-section">
-                        <h3>Education</h3>
-                        <div class="resume-item">
-                            <h4>Bachelor of Business Administration (HRM)</h4>
-                            <p>Madan Mohan Malaviya University of Technology, Gorakhpur | 2021 - Present</p>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-section">
-                        <h3>Certifications</h3>
-                        <div class="resume-item">
-                            <h4>HR Fundamentals</h4>
-                            <p>Reliance Foundation | 2022</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Talent Acquisition</h4>
-                            <p>Coursera | 2023</p>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-section">
-                        <h3>Experience</h3>
-                        <div class="resume-item">
-                            <h4>SAE Collegiate Club</h4>
-                            <p>Content Creator & Video Editor | 2022 - Present</p>
-                            <ul>
-                                <li>Created promotional videos for club events</li>
-                                <li>Designed posters and social media content</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="nav-container">
+                <a href="index.html" class="logo" aria-label="Home">Vaishnavi<span>.</span></a>
+                <button class="mobile-nav-btn" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="navbar" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
+                        <li class="nav-item"><a href="soft-skills.html" class="nav-link">Soft Skills</a></li>
+                        <li class="nav-item"><a href="technical-skills.html" class="nav-link">Technical Skills</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link active">Resume</a></li>
+                        <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <section class="resume-section" id="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Resume</h2>
+                    <p class="section-subtitle">Professional journey and qualifications</p>
+                </div>
+                <div class="resume-container">
+                    <div class="resume-download">
+                        <a href="Vaishnavi singh_resume02.pdf" class="btn" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                    <div class="resume-preview">
+                        <img src="Vaishnavi singh_resume02_page-0001.jpg" alt="Vaishnavi Singh's Resume" class="resume-img">
+
+                    </div>
+                    <div class="resume-details">
+                        <div class="resume-section">
+                            <h3>Education</h3>
+                            <div class="resume-item">
+                                <h4>Bachelor of Business Administration (HR)</h4>
+                                <p>Madan Mohan Malaviya University of Technology, Gorakhpur | 2023 - Present</p>
+                            </div>
+                        </div>
+                        
+                        <div class="resume-section">
+                            <h3>Certifications</h3>
+                            <div class="resume-item">
+                                <h4>Human Resources</h4>
+                                <p>Forage | February 2025</p>
+                            </div>
+                            <div class="resume-item">
+                                <h4>Talent Acquisition</h4>
+                                <p>Reliance Foundation | February 2025</p>
+                            </div>
+                        </div>
+                        
+                        <div class="resume-section">
+                            <h3>Experience</h3>
+                            <div class="resume-item">
+                                <h4>SAE Collegiate Club</h4>
+                                <p>Content Creator & Video Editor | 2024 - Present</p>
+                                <ul>
+                                    <li>Created promotional videos for club events</li>
+                                    <li>Handle photography and social media content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h3>Vaishnavi Singh</h3>
+                    <p>HR Professional & Creative Enthusiast</p>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="bio.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="resume.html"><i class="fas fa-chevron-right"></i> Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                  <h3>Contact</h3>
+                  <ul class="footer-links">
+                      <li><a href="mailto:vaishnavis1816@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                      <li><a href="tel:+916394732543"><i class="fas fa-phone"></i> Phone</a></li>
+                      <li><a href="https://maps.app.goo.gl/sDDMGNAVGvy8NrCcA"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> Vaishnavi Singh. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <a href="#resume" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+    <script>
+        document.querySelector('.mobile-nav-btn').addEventListener('click', function() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+          
+          // Change icon ☰ → ✕
+          const icon = navbar.classList.contains('active') ? 'times' : 'bars';
+          this.innerHTML = `<i class="fas fa-${icon}"></i>`;
+        });
+      </script>
 </body>
 </html>
